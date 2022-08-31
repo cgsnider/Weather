@@ -17,7 +17,7 @@ struct ContentView: View {
                 
             } else if locationManager.isLoading {
                 
-                ProgressView()
+                LoadingView()
                 
             }else {
                 
