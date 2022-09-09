@@ -9,16 +9,29 @@ import SwiftUI
 
 struct Temperature: View {
     
+    
     var weather : ResponseBody
+    
+    func selectImg() -> String{
+        
+        /* TODO: Need to add weather icons for other weather conditions.
+            Other weather conditions include Thunderstorm, Drizzle, Rain, Snow, Clear
+         */
+        
+        if (weather.weather[0].main == "Clouds") {
+            return "cloud.fill"
+        } else {
+            return "sun.min"
+        }
+    }
     
     var body: some View {
         HStack{
             VStack(spacing: 20) {
-                Image(systemName: "cloud.fill")
+                Image(systemName: selectImg())
                     .font(.system(size: 40))
                 Text(weather.weather[0].main)
             }
-            
                                         
             Text(weather.main.feels_like.roundDouble() + "°F").font(.system(size: 100))
                 .fontWeight(.bold)
