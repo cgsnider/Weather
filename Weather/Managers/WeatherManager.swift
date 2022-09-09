@@ -14,8 +14,9 @@ class WeatherManager {
         
         //This key is disabled
         let api_key = ""
+        let units = "imperial"
         
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(api_key)") else {fatalError("Missing URL")}
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(api_key)&units=\(units)") else {fatalError("Missing URL")}
         
         let urlRequest = URLRequest(url: url)
         
