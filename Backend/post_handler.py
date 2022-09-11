@@ -2,7 +2,7 @@ import pymysql
 
 endpoint = 'database-1.ca2cs6jnjik4.us-east-2.rds.amazonaws.com'
 username = 'admin'
-password = 'BoseSoundCloud'
+password = ''
 database_name = 'Social_Forcasts'
 
 
