@@ -10,6 +10,9 @@
 		560894DB28CBEB57004F5690 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560894DA28CBEB57004F5690 /* Temperature.swift */; };
 		560894DD28CBECB7004F5690 /* MaxMin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560894DC28CBECB7004F5690 /* MaxMin.swift */; };
 		560894DF28CBF1D7004F5690 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560894DE28CBF1D7004F5690 /* Empty.swift */; };
+		563C526D28CE698600317F50 /* SocialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C526C28CE698600317F50 /* SocialManager.swift */; };
+		563C526F28CE6A3D00317F50 /* Social.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C526E28CE6A3D00317F50 /* Social.swift */; };
+		563C527128CE6D3B00317F50 /* social.json in Resources */ = {isa = PBXBuildFile; fileRef = 563C527028CE6D3B00317F50 /* social.json */; };
 		56D6C9FE28BEE69D00E271B2 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D6C9FD28BEE69D00E271B2 /* WeatherApp.swift */; };
 		56D6CA0028BEE69D00E271B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D6C9FF28BEE69D00E271B2 /* ContentView.swift */; };
 		56D6CA0228BEE6A100E271B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D6CA0128BEE6A100E271B2 /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 		560894DA28CBEB57004F5690 /* Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		560894DC28CBECB7004F5690 /* MaxMin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxMin.swift; sourceTree = "<group>"; };
 		560894DE28CBF1D7004F5690 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		563C526C28CE698600317F50 /* SocialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialManager.swift; sourceTree = "<group>"; };
+		563C526E28CE6A3D00317F50 /* Social.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social.swift; sourceTree = "<group>"; };
+		563C527028CE6D3B00317F50 /* social.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = social.json; sourceTree = "<group>"; };
 		56D6C9FA28BEE69D00E271B2 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D6C9FD28BEE69D00E271B2 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		56D6C9FF28BEE69D00E271B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +66,7 @@
 				560894DA28CBEB57004F5690 /* Temperature.swift */,
 				560894DC28CBECB7004F5690 /* MaxMin.swift */,
 				560894DE28CBF1D7004F5690 /* Empty.swift */,
+				563C526E28CE6A3D00317F50 /* Social.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -100,6 +107,7 @@
 				56D6CA0428BEE6A100E271B2 /* Preview Assets.xcassets */,
 				56FFDAB528CB825A00D187EC /* ModelData.swift */,
 				56FFDAB728CB83BB00D187EC /* weatherData.json */,
+				563C527028CE6D3B00317F50 /* social.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 			children = (
 				56D6CA0C28BEE78700E271B2 /* LocationManager.swift */,
 				56D6CA1628BEF41C00E271B2 /* WeatherManager.swift */,
+				563C526C28CE698600317F50 /* SocialManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -184,6 +193,7 @@
 			files = (
 				56D6CA0528BEE6A100E271B2 /* Preview Assets.xcassets in Resources */,
 				56FFDAB828CB83BB00D187EC /* weatherData.json in Resources */,
+				563C527128CE6D3B00317F50 /* social.json in Resources */,
 				56D6CA0228BEE6A100E271B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +217,8 @@
 				560894DD28CBECB7004F5690 /* MaxMin.swift in Sources */,
 				560894DB28CBEB57004F5690 /* Temperature.swift in Sources */,
 				56FFDABA28CB844900D187EC /* WeatherView.swift in Sources */,
+				563C526F28CE6A3D00317F50 /* Social.swift in Sources */,
+				563C526D28CE698600317F50 /* SocialManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

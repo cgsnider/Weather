@@ -11,13 +11,17 @@ struct ContentView: View {
     @StateObject var locationManager = LocationManager()
     var weatherManager = WeatherManager()
     @State var weather: ResponseBody?
+    var socialManager = SocialManager()
+    @State var social: SocialResponse?
     
     var body: some View {
         VStack {
             if let location = locationManager.location {
                 
                 if let weather = weather {
-                    WeatherView(weather: weather, curr: "maxmin")
+                    if let social = social {
+                        WeatherView(weather: weather, social: social, curr: "maxmin")
+                    }
                 } else {
                     LoadingView()
                         .task {
