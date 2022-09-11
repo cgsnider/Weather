@@ -13,13 +13,22 @@ struct Social: View {
     
     func selectImg() -> String{
         
-        /* TODO: Need to add weather icons for other weather conditions.
-            Other weather conditions include Thunderstorm, Drizzle, Rain, Snow, Clear
-         */
-        
         if (social.main == "Clouds") {
             return "cloud.fill"
-        } else {
+            
+        } else  if (social.main == "Thunderstorm") {
+            return "cloud.bolt.rain"
+            
+        } else  if (social.main == "Drizzle") {
+            return "cloud.drizzle"
+        
+        } else  if (social.main == "Rain") {
+            return "cloud.rain"
+        
+        } else  if (social.main == "Snow") {
+            return "cloud.snow"
+        
+        } else  {
             return "sun.min"
         }
     }
@@ -29,7 +38,7 @@ struct Social: View {
             VStack(spacing: 20) {
                 Image(systemName: selectImg())
                     .font(.system(size: 40))
-                Text("Social")
+                Text("social.main")
             }
                                         
             Text(String(social.feels_like) + "°F").font(.system(size: 100))
