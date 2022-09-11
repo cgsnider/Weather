@@ -11,12 +11,10 @@ connection = pymysql.connect(host=endpoint, user=username, passwd=password, db=d
 def lambda_handler (event, context):
     cursor = connection.cursor()
 
-    # weather_main = event['queryStringParameters']['main']
-    # weather_feels_like = event['queryStringParameters']['feels_like']
+    weather_main = event['queryStringParameters']['main']
+    weather_feels_like = event['queryStringParameters']['feels_like']
 
-    out = cursor.execute(f"CALL add_forcast('{'clear'}', {75})")
-
-    print(out)
+    cursor.execute(f"CALL add_forcast('{weather_main}', {weather_feels_like})")
 
     response = {}
     response['statusCode'] = 201
@@ -24,5 +22,3 @@ def lambda_handler (event, context):
     response['headers']['Content-Type'] = "application/json"
 
     return response
-
-lambda_handler(None, None)
