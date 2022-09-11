@@ -14,13 +14,25 @@ struct Temperature: View {
     
     func selectImg() -> String{
         
-        /* TODO: Need to add weather icons for other weather conditions.
-            Other weather conditions include Thunderstorm, Drizzle, Rain, Snow, Clear
+        /* Icons for weather conditions: Thunderstorm, Drizzle, Rain, Snow, Clear
          */
         
         if (weather.weather[0].main == "Clouds") {
             return "cloud.fill"
-        } else {
+            
+        } else  if (weather.weather[0].main == "Thunderstorm") {
+            return "cloud.bolt.rain"
+            
+        } else  if (weather.weather[0].main == "Drizzle") {
+            return "cloud.drizzle"
+        
+        } else  if (weather.weather[0].main == "Rain") {
+            return "cloud.rain"
+        
+        } else  if (weather.weather[0].main == "Snow") {
+            return "cloud.snow"
+        
+        } else  {
             return "sun.min"
         }
     }
